@@ -15,6 +15,7 @@ import './styles/home.scss';
 import './styles/footer.scss';
 import './styles/contact.scss';
 import './styles/mediaquery.scss';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
+      <Toaster />
     </Router>
   );
 }
